@@ -1,0 +1,54 @@
+.favorites-page {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.favorites-page h1 {
+  text-align: left;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.favorites-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.favorite-item {
+  max-width: 25%; /* Ajustar el ancho máximo de cada tarjeta */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.5px dashed rgb(155, 155, 155);
+  padding: 15px;
+}
+
+.favorite-item-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.favorite-item-buttons button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.favorite-item-buttons button:first-child {
+  background-color: #1d3d1d; /* Verde para añadir al carrito */
+}
+
+.favorite-item-buttons button:last-child {
+  background-color: #493e3e; /* Rojo para quitar de favoritos */
+}
+
+.favorite-item-buttons button:hover {
+  opacity: 0.9;
+}

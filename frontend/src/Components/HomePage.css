@@ -1,0 +1,183 @@
+/* HomePage.css */
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  border-top: 1px solid black;
+  box-sizing: border-box; 
+}
+
+
+  p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+  
+  .header p {
+    font-size: 15px;
+  }
+
+  .title {
+    font-family:  Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 32px;
+  }
+
+  header > * {
+    margin: 0 10px;
+  }
+  
+  .top_right_header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top_right_header p {
+    margin-right: 27px;
+  }
+  
+  .top_right_header svg {
+    font-size: 27px;
+    margin-left: 10px;
+  }
+  
+  main {
+    padding: 100px 20px;
+  }
+
+  h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+  }
+
+  .slider {
+    width: auto;
+    height: auto;
+    margin: auto;
+    overflow: hidden; /* Hides any overflow of the sliding content */   
+    border: 1px black;
+  }
+  
+  .slide_track {
+    width: 100%;
+    display: flex;
+    animation: scroll 40s linear infinite;
+    border: 1px black linear;
+  }
+  
+  .slide {
+    width: auto;
+    
+  }
+  
+  .slide p {
+    font-size: 16px;
+    margin: 0;
+    border: 1px black;
+    padding: 10px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%); /* Corrected the calculation for full animation */
+    }
+  }
+  
+
+ main {
+    margin: 0;
+    padding: 15px;
+ }
+ 
+
+.cuerpo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  user-select: none;
+  
+}
+  .text_cuerpo{
+  font-family: IBMPlexMono, sans-serif, -apple-system;
+  font-weight: 400;
+  color: var(--color-black);
+  font-size: 1.2rem;
+  line-height: 1.33;
+  text-align: left;
+  padding: 40px;
+}
+
+.brb {
+  text-transform: capitalize;
+  font-size: 9.5vh;
+  bottom: 65px; /* Position at the bottom */
+  left: 10px; /* Position at the left */
+  position: relative;
+  margin: 0;
+
+}
+
+
+p::selection,
+input::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+span::selection,
+div::selection {
+  background-color: #c3cec2; /* Color de fondo verdoso */
+  color: black; /* Color del texto */
+}
+
+img::selection{
+  user-select: none;
+}
+
+.gender_selection {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 30px; /* Espacio entre las imágenes */
+  padding: 20px;
+}
+
+.gender_item {
+  position: relative;
+  text-align: center; 
+  width: 100%;
+  max-width: 500px; 
+}
+
+.gender_item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 700px; 
+}
+
+a {
+  display: block; /* Asegura que el enlace no afecte el tamaño de los hijos */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+
+
+

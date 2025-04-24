@@ -1,0 +1,45 @@
+/* SearchBar.css */
+
+.search-bar {
+    position: sticky;
+    top: 100px; /* Justo debajo del header */
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* Color de fondo */
+    z-index: 1000;
+    transition: opacity 0.3s ease; /* Suaviza la animación */
+    box-shadow: none;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 600px;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #444647;
+}
+
+.search-button {
+    background-color: #444647;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #1f2020;
+}

@@ -1,0 +1,106 @@
+1
+{
+  "name": "Ow Be Right Back ¨Paris",
+  "description": "The new 'BE RIGHT BACK' sneakers merge performance running aesthetics with Japanese design principles.",
+  "price": "615",
+  "stock": "40",
+  "gender": "man"
+}
+
+2
+{
+  "name": "Ow be right back (new york)",
+  "description": "The new 'BE RIGHT BACK' sneakers merge performance running aesthetics with Japanese design principles.",
+  "price": "615",
+  "stock": "15",
+  "gender": "man"
+}
+
+3
+{
+  "name": "Ow Be Right Back (miami)",
+  "description": "The new 'BE RIGHT BACK' sneakers merge performance running aesthetics with Japanese design principles.",
+  "stock": "40",
+  "gender": "man"
+}
+
+4
+{
+  "name": "Ow Be Right Back (milan)",
+  "description": "The new 'BE RIGHT BACK' sneakers merge performance running aesthetics with Japanese design principles.",
+  "price": "615",
+  "stock": "15",
+  "gender": "man"
+}
+
+5
+{
+  "name": "Adi2000",
+  "description": "Zapatillas para mujer",
+  "price": "300",
+  "stock": "25",
+  "gender": "woman"
+}
+
+6
+{
+  "name": "Nike Dunk Low Retro",
+  "description": "Zapatillas de Moda para Hombre de color blanco y negro",
+  "price": "200",
+  "stock": "5",
+  "gender": "man"
+}
+
+7
+{
+  "name": "Air Jordan 1 Low",
+  "description": "Zapatillas Jordan para Hombre roja y negra",
+  "price": "300",
+  "stock": "25",
+  "gender": "man"
+}
+
+8
+{
+  "name": "Nike SB Dunk Low Pro Premium",
+  "description": "Zapatillas de moda para Hombre de color",
+  "price": "450",
+  "stock": "7",
+  "gender": "man"
+}
+
+9
+{
+  "name": "Air Jordan 1 Mid SE",
+  "description": "Zapatillas Jordan para Hombre de color violeta",
+  "price": "249",
+  "stock": "10",
+  "gender": "man"
+}
+
+10
+{
+  "name": "Zapatillas adidas Grand Court Platforma",
+  "description": "Zapatillas para Mujer de color Rosado",
+  "price": "119",
+  "stock": "13",
+  "gender": "woman"
+}
+
+11
+{
+  "name": "Zapatillas Jabbar Low",
+  "description": "Zapatillas para Mujer de color blanco y verde",
+  "price": "179",
+  "stock": "12",
+  "gender": "woman"
+}
+
+12
+{
+  "name": "Zapatillas Gazelle",
+  "description": "Zapatillas para Mujer de color amarillo y marron",
+  "price": "189",
+  "stock": "12",
+  "gender": "woman"
+}

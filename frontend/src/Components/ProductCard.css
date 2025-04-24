@@ -1,0 +1,125 @@
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-top: 1px solid black;
+    box-sizing: border-box; 
+    z-index: 1000;
+}
+
+/* Contenedor de las tarjetas de producto */
+.product-cards {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+}
+
+.product-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-cards::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+/* Tarjeta de producto */
+.card {
+    flex: 25%;  /* Ancho de la tarjeta en pantallas grandes */
+    max-width: 370px; /* Tamaño máximo */
+    margin: 10px;
+    border: 0.5px dashed rgb(155, 155, 155);
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen de la tarjeta */
+.card_image {
+    position: relative;
+    height: 400px; /* Altura de la imagen ajustada */
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%; /* Ajusta la imagen para ocupar toda la altura */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover .prev, .card:hover .next {
+    opacity: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Textos de la tarjeta */
+.card_text {
+    padding: 12px;
+    text-align: left;
+}
+
+.card_text h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #000000;
+}
+
+.card_text p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 50%; /* Dos tarjetas por fila en pantallas medianas */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 0 0 100%; /* Una tarjeta por fila en pantallas pequeñas */
+        max-width: 100%;
+    }
+}
