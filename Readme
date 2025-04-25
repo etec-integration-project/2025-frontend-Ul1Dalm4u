@@ -1,0 +1,45 @@
+Sabatini-Dalmau
+
+Base de datos comandos:
+
+CREATE DATABASE tino_uli;
+USE tino_uli;
+
+-- Tabla de productos
+CREATE TABLE products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  description TEXT NOT NULL,
+  price FLOAT NOT NULL,
+  stock INT NOT NULL,
+  gender VARCHAR(50),
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Tabla de usuarios
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  lastname VARCHAR(50) NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Tabla de imágenes (relacionada con productos)
+CREATE TABLE images (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  id_product INT,  -- Relación con la tabla products
+  url VARCHAR(255) NOT NULL,
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (id_product) REFERENCES products(id) ON DELETE CASCADE
+);
+
+SHOW DATABASES;
+
+DB:tino_uli
+usuario:root
+contraseña:1234

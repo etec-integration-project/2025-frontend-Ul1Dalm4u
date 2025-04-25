@@ -1,15 +1,18 @@
-# Etapa de build
-FROM node:20-alpine AS build
+FROM node:18-alpine
+
 WORKDIR /app
+
+# Copy package files
 COPY package*.json ./
+
+# Install dependencies
 RUN npm install
+
+# Copy source code
 COPY . .
 
-# Etapa de producción
-FROM node:20-alpine
-WORKDIR /app
-COPY --from=build /app ./
-COPY .env .env
-RUN npm ci --only=production
+# Expose port 3000
 EXPOSE 3000
-CMD ["node", "index.js"]
+
+# Start the application
+CMD ["npm", "start"] 
