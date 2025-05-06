@@ -1,1 +1,85 @@
-PAG DOCKERIZADA
+# Proyecto Web Dockerizado
+
+🔹 Aplicación full-stack dockerizada compuesta por un frontend en React, un backend en Node.js y una base de datos MySQL. Diseñada para ofrecer una arquitectura moderna, escalable y fácilmente desplegable.
+
+---
+
+## 🛠 Stack Tecnológico
+
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-18-green?logo=node.js)
+![MySQL](https://img.shields.io/badge/MySQL-8-orange?logo=mysql)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
+
+---
+
+## 🚀 Características
+
+- ✅ Frontend construido con React.
+- ✅ Backend en Node.js (Express).
+- ✅ Comunicación entre servicios mediante Docker Compose.
+- ✅ Persistencia de datos con MySQL.
+- ✅ Arquitectura desacoplada y escalable.
+- ✅ Fácil despliegue con un solo comando Docker.
+
+---
+
+## 📦 Instalación
+
+### Requisitos previos
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+### Pasos
+
+1. Cloná el repositorio:
+```bash
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
+2. Construí y levantá los contenedores:
+
+docker-compose up --build
+
+    La app estará disponible en:
+
+    Frontend: http://localhost:8080
+
+    Backend API: http://localhost:3000 
+    MySQL: localhost:3306#desactivado actualmente
+
+🛠 Uso Básico
+
+    Accedé al frontend en tu navegador: http://localhost:8080.
+
+    Verificá que el backend responda en: http://localhost:3000/api.
+
+Comandos útiles (dentro del contenedor backend)
+
+npm install       # Instala dependencias
+npm run dev       # Ejecuta en modo desarrollo
+
+🤝 Contribución
+
+¡Contribuciones bienvenidas! Seguí estos pasos:
+
+    Hacé un fork del proyecto.
+
+    Creá una nueva rama: git checkout -b feature/NombreDeTuFeature.
+
+    Realizá tus cambios y hacé commit: git commit -m "Agrega nueva feature".
+
+    Push a tu fork: git push origin feature/NombreDeTuFeature.
+
+    Abrí un Pull Request.
+
+    Si existe un archivo CONTRIBUTING.md, consultalo para conocer los estándares de estilo y guía de desarrollo.
+
+📜 Licencia
+
+Este proyecto está licenciado bajo la MIT License.
+✨ Créditos / Agradecimientos
+
+    Inspirado en arquitecturas modernas de microservicios.
+
+    Agradecimientos a los colaboradores y tecnologías open source utilizadas.
